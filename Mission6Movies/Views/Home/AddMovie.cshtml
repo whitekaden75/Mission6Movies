@@ -1,0 +1,34 @@
+@model Mission6Movies.Models.Application
+
+@{
+}
+
+<h1>Here you can add movie to your database.</h1>
+
+<form method="post">
+    <label asp-for="Category" required >What Category</label>
+    <input asp-for="Category">
+    <br>
+    <label asp-for="Title" required>Movie Title</label>
+    <input asp-for="Title">
+    <br>
+    <label asp-for="Year" required>Year(s) for movie or show</label>
+    <input asp-for="Year">
+    <br>
+    <label asp-for="Director" required>Director's Name</label>
+    <input asp-for="Director">
+    <br>
+    <label asp-for="Rating" required>Movie Rating</label>
+    <input asp-for="Rating">
+    <br>
+    <label asp-for="Edited" >Is the movie Edited?</label>
+    <input asp-for="Edited">
+    <br>
+    <label asp-for="LentTo">Enter who you've lent the movie to. (if you haven't lent to anyone, leave blank)</label>
+    <input asp-for="LentTo">
+    <br>
+    <label asp-for="Notes">Where do you have the movie?</label>
+    <input asp-for="Notes" maxlength="25">
+    <button type="submit">Submit</button>
+</form>
+
